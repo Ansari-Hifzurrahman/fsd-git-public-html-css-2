@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Project</title>
+    <style>
+        /* * (star)apply for  all   */
+        *{
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+        .custom-span-button {
+            border-radius: 3px;
+            padding: 5px;
+            border: 1px solid rgb(120, 216, 146);
+        }
+
+        .mainBody {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .firstDiv {
+            color: rgb(120, 216, 146);
+            padding: 20px;
+            background-color: rgb(5, 52, 58);
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .Free {
+            border-radius: 2px;
+            text-align: center;
+            padding: 2px;
+            background-color: rgb(30, 82, 65);
+            width: 50px;
+        }
+
+        .skills {
+            font-size: 13px;
+        }
+        .circle{
+            /* background-color: rgb(5, 52, 58); */
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+            border-radius: 50%;
+            color: lightgray;
+            padding: 30px;
+            margin-left: 30px;
+            font-weight: bold;
+            background-image: linear-gradient(to right, orange,green,black);
+        }
+        .circle-container{
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="mainBody">
+    <div class="firstDiv">
+        <p class="Free">
+            Free</p>
+        <h1>Online Code Editor</h1>
+        <p >Beginner</p>
+        <p >20 hours</p>
+        <p class="skills">Skills</p>
+        <p>
+            <!-- Same css is used here and if color needs a change so we have to change all color inside the styl. -->
+            <!-- And if we have to add more span ett so need to add same css. -->
+            <!-- <span style="border-radius: 3px;padding: 5px;border: 1px solid rgb(120,216,146);">HTML</span>
+            <span style="border-radius: 3px;padding: 5px;border: 1px solid rgb(120,216,146);">CSS</span>
+            <span style="border-radius: 3px;padding: 5px;border: 1px solid rgb(120,216,146);">JQuery</span>
+            <span style="border-radius: 3px;padding: 5px;border: 1px solid rgb(120,216,146);">Web Development</span> -->
+
+            <!-- To add code reusablity/redundancy [To add style from class]-->
+            <span class="custom-span-button">HTML</span>
+            <span class="custom-span-button">CSS</span>
+            <span class="custom-span-button">JQuery</span>
+            <span class="custom-span-button">Web Development</span>
+        </p>
+    </div>
+
+    <div class="circle-container">
+        <div class="circle">1<br/><br/>Crestea vsdgvjh smf bgergiergu</div>
+        <div class="circle">2<br/><br/>Crestea vsdgvjh smf bgergiergu</div>
+        <div class="circle">3<br/><br/>Crestea vsdgvjh smf bgergiergu</div>
+    </div>
+
+    <div></div>
+</body>
+
+</html>
