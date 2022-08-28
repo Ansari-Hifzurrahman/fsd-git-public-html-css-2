@@ -11,8 +11,9 @@
         *{
             vertical-align: top;
             box-sizing: border-box;
+            font-family: sans-serif;
         }
-        .custom-span-button {
+        .customSpanButton {
             border-radius: 3px;
             padding: 5px;
             border: 1px solid rgb(120, 216, 146);
@@ -32,7 +33,7 @@
             margin-right: 30px;
         }
 
-        .Free {
+        .free {
             border-radius: 2px;
             text-align: center;
             padding: 2px;
@@ -53,20 +54,46 @@
             padding: 30px;
             margin-left: 30px;
             font-weight: bold;
-            background-image: linear-gradient(to right, orange,green,black);
+            background-image: linear-gradient(to right bottom, rgb(41,130,110),rgb(9,111,104),rgb(5,69,65));
         }
-        .circle-container{
+        .circleContainer{
             text-align: center;
             padding-top: 20px;
+        }
+        .circleNumber{
+            /* width: 20%; */
+            -webkit-text-stroke: 1px white;
+            font-size: 25px;
+              -webkit-font-smoothing: antialiased;
+        }
+        .circleText{
+            width: 80%;
+            /* height: 100%; */
+            text-align: center;
+        }
+        .viewDiv{
+            margin-top: 30px;
+            text-align: right;
+            margin-right: 30px;
+        }
+        .viewButton{
+            background-color: rgb(5, 52, 58);
+            padding: 25px 100px 25px 100px; 
+            border: 0px none;
+            border-radius: 3px;
+            color: white;
+            box-shadow: 2px 5px rgb(120, 216, 146);
+            font-size: 22px;
+            
         }
     </style>
 </head>
 
 <body class="mainBody">
     <div class="firstDiv">
-        <p class="Free">
-            Free</p>
-        <h1>Online Code Editor</h1>
+        <p class="free">
+            free</p>
+        <h1>Online Code Editor (JQuery)</h1>
         <p >Beginner</p>
         <p >20 hours</p>
         <p class="skills">Skills</p>
@@ -79,26 +106,36 @@
             <span style="border-radius: 3px;padding: 5px;border: 1px solid rgb(120,216,146);">Web Development</span> -->
 
             <!-- To add code reusablity/redundancy [To add style from class]-->
-            <span class="custom-span-button">HTML</span>
-            <span class="custom-span-button">CSS</span>
-            <span class="custom-span-button">JQuery</span>
-            <span class="custom-span-button">Web Development</span>
+            <span class="customSpanButton">HTML</span>
+            <span class="customSpanButton">CSS</span>
+            <span class="customSpanButton">JQuery</span>
+            <span class="customSpanButton">Web Development</span>
+            <span class="customSpanButton">Website Hosting</span>
         </p>
     </div>
 
-    <div class="circle-container">
-        <div class="circle">1<br/><br/>Crestea vsdgvjh smf bgergiergu</div>
-        <div class="circle">2<br/><br/>Crestea vsdgvjh smf bgergiergu</div>
-        <div class="circle">3<br/><br/>Crestea vsdgvjh smf bgergiergu</div>
+    <div class="circleContainer">
+        <div class="circle"><div class="circleNumber">1</div><br/>
+        <div class="circleText">Create the structural aspect of a code editor using HTML, CSS.</div>
+    </div>
+        <div class="circle">2<br/><br/>Implementation of core functionalities and other small features using JQuery.</div>
+        <div class="circle">3<br/><br/>Publish to gitHub and host your deployes code editor.</div>
     </div>
 
-    <div style="text-align: right;margin-right: 30px;">
-        <button>View More</button>
+    
+    <div class="viewDiv">
+        <button class="viewButton" >View the Project</button>
     </div>
 
-    <div style="margin-right: 30px;">
+    <!-- Text align with div -->
+    <!-- <div style="text-align: right;margin-right: 30px;">
+        <button >View the Project</button>
+    </div> -->
+
+    <!-- float left with button -->
+    <!-- <div style="margin-right: 30px;">
         <button style="float: right;">View More 2</button>
-    </div>
+    </div> -->
 
     <!-- Css Postions -->
     <!-- Applied as X Y axis position. 
@@ -112,8 +149,10 @@
         <button style="position: absolute;right:0;top:0;">relative</button>
     </div> -->
 
-    <button style="position: absolute;right:0;top:0;">absolute</button>
+    <!-- Position absolute is applied to whole screen whereas position relative is applied to respective element -->
+    <!-- <button style="position: absolute;right:0;top:0;">absolute</button> -->
 
+    
 
 </body>
 

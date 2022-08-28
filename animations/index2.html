@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --glow-color-1: red;
+            --glow-color-2: Orangered;
+            --glow-color-3: orange;
+        }
+
+        .glow-color-set-1 {
+            --glow-color-1: blue;
+            --glow-color-2: lightblue;
+            --glow-color-3: violet;
+        }
+
+        .glow-color-set-2 {
+            --glow-color-1: green;
+            --glow-color-2: darkgreen;
+            --glow-color-3: yellowgreen;
+        }
+
+        .glow-border {
+            animation: glow-keyframes 3s infinite forwards linear;
+        }
+
+        .grow{
+            transition: 0.5s;
+        }
+        .grow:hover {
+            transform: scale(1.2);          
+        }
+
+        @keyframes glow-keyframes {
+            0% {
+                border: 1px solid var(--glow-color-1);
+                background-color: var(--glow-color-2);
+            }
+
+            25% {
+                border: 1px solid var(--glow-color-2);
+                background-color: var(--glow-color-3);
+            }
+
+            75% {
+                border: 1px solid var(--glow-color-3);
+                background-color: var(--glow-color-1);
+            }
+
+            100% {
+                border: 1px solid var(--glow-color-1);
+                background-color: var(--glow-color-2);
+            }
+        }
+
+        .button {
+            height: 2rem;
+            width: auto;
+            display: inline-block;
+            padding: 0.3rem;
+            border-radius: 1rem;
+            background-color: orange;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button glow-border"> Glowing button no Color set </div>
+    <div class="button glow-border grow glow-color-set-1"> Glowing button Color set 1</div>
+    <div class="button glow-border glow-color-set-2"> Glowing button Color set 2</div>
+
+<br>
+<br>
+    <button class="button grow">Click me</button>
+</body>
+
+</html>

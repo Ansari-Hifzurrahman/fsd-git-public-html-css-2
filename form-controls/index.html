@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Controls</title>
+
+</head>
+<style>
+    .custome-checkbox{
+        accent-color: yellow;
+    }
+</style>
+<body>    
+    <h4>Text Box</h4>
+    <input type="text" placeholder="Username">
+
+    
+    <h4>Passsword </h4>
+    <input type="password" placeholder="Password">
+
+    <hr>
+    <h4>Text Box with suggestions</h4>
+    <input list="choice" type="text" placeholder="Username">
+    <datalist id="choice">
+        <option>Jarvis </option>
+        <option>Scorpion</option>
+        <option>Hulk</option>
+    </datalist>
+    <h4>Number</h4>
+    <input type="number">
+    <br/>
+    <br/>
+    
+    <!-- Must have same name property to slect only one of them -->
+    <h4>Radio Button</h4>
+    <span><input type="radio" name="AccountType" id="" >Current A/c</span>
+    <span><input type="radio" name="AccountType" id="" checked >Saving A/C</span>
+    <span><input type="radio" name="AccountType" id="" >Business A/C</span>
+    <br/>
+    <br/>
+    <h4>Checkbox</h4>
+    <h6>Apply For Plan</h6>
+    <span><input type="checkbox" name="PlanType" id="" class="custome-checkbox">Plan A</span>
+    <span><input type="checkbox" name="PlanType" id="" class="custome-checkbox">Plan B</span>
+    <span><input type="checkbox" name="PlanType" id="" class="custome-checkbox">Plan C</span>
+
+    <h4>Single Select List Choices </h4>
+    <select name="" id="">
+        <option value="">Delhi</option>
+        <option value="">Maharashtra</option>
+        <option value="">Hyderabad</option>
+        <option value="">Bangalore</option>
+    </select>
+
+    <h4>Multiple Select List Choices </h4>
+    <select name="" id="" multiple>
+        <option value="">Delhi</option>
+        <option value="">Maharashtra</option>
+        <option value="">Hyderabad</option>
+        <option value="">Bangalore</option>
+    </select>
+
+    <br/>
+    <br/>
+
+    <input type="date">
+    <br/>
+    <br/>
+    <input type="range" min="0" max="300" step="50">
+
+    <br/>
+    <br/>
+    <h4>Color</h4>
+    <input type="color">
+
+    
+    <br/>
+    <br/>
+    <h4>File</h4>
+    <input type="File">
+
+</body>
+</html>
